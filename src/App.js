@@ -1,9 +1,19 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
+import {  Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
+import CreateNewTask from './pages/Add'
+
+
 
 function App() {
   return (
-    <h1>Hello, World!</h1>
+    <>
+      <Routes>
+          <Route path='/' element={<Home />} exact />
+          <Route path='/add' element={<CreateNewTask />} />
+      </Routes>
+    
+    </>
   );
 }
 
