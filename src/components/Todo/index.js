@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, CardContent, CardActions, Button } from '@material-ui/core'
+import { Card, CardContent, CardActions, Button, Typography } from '@material-ui/core'
 
 
 const Todo = (props) => {
@@ -9,7 +9,9 @@ const Todo = (props) => {
     <>
     <Card variant="outlined">
       <CardContent>
-        {args.name}   
+        <Typography variant='h3' align='center'>
+          {args.name}   
+        </Typography>
       </CardContent>
       <CardActions>
         <Button 
@@ -17,6 +19,9 @@ const Todo = (props) => {
           color="primary">
             Clique aqui!
         </Button>
+        <Button
+          variant="contained"
+          color="secondary">Atenção!</Button>
       </CardActions>
     </Card>
 

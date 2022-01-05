@@ -4,6 +4,7 @@ import App from './App';
 import './index.css';
 import { BrowserRouter } from 'react-router-dom'
 import { createTheme, ThemeProvider } from '@material-ui/core'
+import Header from './components/Header'
 
 const theme = createTheme({
   palette: {
@@ -11,15 +12,16 @@ const theme = createTheme({
       main: '#a182a5'
     },
     secondary: {
-      main: '#a182a5'
-    }
-  },
+      main: '#DC143C'
+    },
+  }
 })
 
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <BrowserRouter>
+        <Header />
         <App /> 
       </BrowserRouter>
     </ThemeProvider>

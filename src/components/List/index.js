@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Grid } from '@material-ui/core'
+import { Container, Grid } from '@material-ui/core'
 import Todo from '../Todo'
 
 const ListItems = () => {
@@ -18,9 +18,9 @@ const ListItems = () => {
 
   return (
     <>
-      <Grid spacing={5}>
-        <Grid item xs={6} spacing={3}>
-          <Grid container justifyContent="center">
+      <Container>
+        <Grid item xs={6}>
+          <Grid container justifyContent="center" spacing={3}>
           {
             items.map((item) => (
               <Todo key={item.id} arg={item}/>
@@ -28,7 +28,7 @@ const ListItems = () => {
           }
           </Grid>
         </Grid>
-      </Grid>
+      </Container>
     </>
   )
 }
