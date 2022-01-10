@@ -9,22 +9,17 @@ const Todo = (props) => {
     <>
     <Card variant="outlined">
       <CardContent>
-        <Typography variant='h3' align='center'>
-          {args.name}   
+        <Typography variant='h4' align='center'>
+          {args.title}   
         </Typography>
-      </CardContent>
-      <CardActions>
-        <Button 
-          variant="contained"
-          color="primary">
-            Clique aqui!
-        </Button>
-        <Button
-          variant="contained"
-          color="secondary">Atenção!</Button>
-      </CardActions>
+        <Typography variant='h5' align='center'>
+          Prioridade: {args.priority}   
+        </Typography>
+        <Typography variant='h5' align='center'>
+          Prazo: {args.dueDay}   
+        </Typography>
+      </CardContent>  
     </Card>
-
     </>
   )
 }
