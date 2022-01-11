@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { useParams, useNavigate } from 'react-router-dom'
+import { useParams, useNavigate, Link } from 'react-router-dom'
 import ApiRequest from '../../api'
 
 
@@ -49,7 +49,7 @@ const UpdateTask = () => {
     <form onSubmit={HandleSubmit}>
       <div className="form">
         <div className="float-label">
-          <label htmlFor="title">Titulo da Tarefa</label>
+          <label htmlFor="title">Titulo</label>
             <input 
               id="title"
               className="title" 
@@ -107,7 +107,7 @@ const UpdateTask = () => {
               value={task.dueDay}
               onChange={handleChange} />
         </div>
-        <button className="edit-success" type="submit">Editar</button>
+          <button className="success" type="submit">Editar</button>
       </div>
     </form>
   )

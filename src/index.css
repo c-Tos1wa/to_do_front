@@ -33,7 +33,7 @@ a{
 
 .success{
   color: #157145;
-  font-size: 1em;
+  font-size: 1.3em;
   border-color: #157145;
   background-color: #fff;
   padding: 5px;
@@ -50,10 +50,11 @@ a{
 }
 
 .edit-success{
-  color: #344e41;
+  color: #3d405b;
   font-size: 0.8em;
-  border-color: #344e41;
+  border-color: #3d405b;
   background-color: #fff;
   padding: 5px;
   border-radius: 5px;
 }
+

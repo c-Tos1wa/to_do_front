@@ -16,3 +16,26 @@
   cursor: pointer;
   font-size: 1.5em;
 }
+
+.buttons{
+  display: flex;
+  justify-content: center;
+}
+
+.delete{
+  color: #B30235;
+  font-size: 1em;
+  border-color: #B30235;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.nodelete{
+  color: #2a9d8f;
+  font-size: 1em;
+  border-color: #2a9d8f;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
