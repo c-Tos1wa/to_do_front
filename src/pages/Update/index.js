@@ -107,7 +107,12 @@ const UpdateTask = () => {
               value={task.dueDay}
               onChange={handleChange} />
         </div>
+        <div>
           <button className="success" type="submit">Editar</button>
+          <Link to='/'>
+            <button className="info">Voltar</button>
+          </Link>
+        </div>
       </div>
     </form>
   )

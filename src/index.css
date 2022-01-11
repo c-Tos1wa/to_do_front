@@ -58,3 +58,12 @@ a{
   border-radius: 5px;
 }
 
+.info{
+  color: #bb3e03;
+  font-size: 1.3em;
+  border-color: #bb3e03;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 5px; 
+}
+
