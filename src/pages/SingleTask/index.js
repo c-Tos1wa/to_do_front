@@ -23,10 +23,19 @@ const SingleTask = () => {
   }, [])
 
   const taskById = async() => {
-    const request = await ApiRequest.getById(id);
-    const task = await request.json();
-
-    setTask(task);
+    try{
+      const request = await ApiRequest.getById(id);
+      if(request.status === 400){
+        alert('Id inválido, tente novamente!')
+      }if(request.status === 500){
+        alert('Erro no servidor')
+      }
+      const task = await request.json();
+  
+      setTask(task);
+    } catch(err){
+      console.log("Erro", err)
+    }
   }
 
   const handleDelete = async() => {

@@ -11,9 +11,17 @@ const ListItems = () => {
   }, [])
 
   const getItems = async () => {
-    const response = await ApiRequest.getAll();
-    const returnApi = await response.json();
-    setItems(returnApi)
+
+    try{
+      const response = await ApiRequest.getAll();
+      if(response.status === 500) {
+        alert('Erro no servidor, verifique sua api')
+      }
+      const returnApi = await response.json();
+      setItems(returnApi)
+    } catch(err) {
+      console.error('Erro:', err)
+    }
   }
 
   return (
@@ -21,7 +29,6 @@ const ListItems = () => {
      <div className="list">
 
         {
-
           items.map((task) => (
             <Todo key={task._id} task={task}/>
           ))
