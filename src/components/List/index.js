@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
-import { Container, Grid } from '@material-ui/core'
 import Todo from '../Todo'
 import ApiRequest from '../../api'
+import './list.css'
 
 const ListItems = () => {
   const [items, setItems] = useState([]);
@@ -11,24 +11,21 @@ const ListItems = () => {
   }, [])
 
   const getItems = async () => {
-    const response = await fetch('https://backend-dolist.herokuapp.com/')
+    const response = await ApiRequest.getAll();
     const returnApi = await response.json();
     setItems(returnApi)
   }
 
   return (
     <>
-      <Container fixed>
-        <Grid item xs={6}>
-          <Grid container justifyContent="center" spacing={3} margin={3}>
-          {
-            items.map((item) => (
-              <Todo key={item._id} arg={item}/>
-            ))
-          }
-          </Grid>
-        </Grid>
-      </Container>
+     <div className="list">
+        {
+          items.map((task) => (
+            <Todo key={task._id} task={task}/>
+          ))
+        }
+     </div>
+         
     </>
   )
 }

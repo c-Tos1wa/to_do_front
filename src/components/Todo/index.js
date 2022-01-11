@@ -1,25 +1,21 @@
 import React from 'react'
-import { Card, CardContent, CardActions, Button, Typography } from '@material-ui/core'
-
+import { Link } from 'react-router-dom'
+import './card.css'
 
 const Todo = (props) => {
-  const args = props.arg;
+  const tasks = props.task;
 
   return (
     <>
-    <Card variant="outlined">
-      <CardContent>
-        <Typography variant='h4' align='center'>
-          {args.title}   
-        </Typography>
-        <Typography variant='h5' align='center'>
-          Prioridade: {args.priority}   
-        </Typography>
-        <Typography variant='h5' align='center'>
-          Prazo: {args.dueDay}   
-        </Typography>
-      </CardContent>  
-    </Card>
+    <Link to={`each/${tasks._id}`}>
+      <div class="card">
+        <div class="card-body">
+          <h3 class="title">{tasks.title}</h3>
+          <p className="priority">Prioridade: {tasks.priority}</p>     
+          <p className="due">Prazo: {tasks.dueDay}</p>     
+        </div>
+      </div>
+    </Link>
     </>
   )
 }

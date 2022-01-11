@@ -1,4 +1,4 @@
-const url = 'https://backend-dolist.herokuapp.com/'
+const url = 'https://backend-dolist.herokuapp.com'
 
 const ApiRequest = {
   getAll: () => fetch(url),

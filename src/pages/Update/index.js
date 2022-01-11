@@ -1,9 +1,9 @@
 import React from 'react'
 
-const ModifiedTask = () => {
+const UpdateTask = () => {
   return(
     <div>Formulário para alterar a tarefa</div>
   )
 }
 
-export default ModifiedTask
+export default UpdateTask

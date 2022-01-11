@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+import ApiRequest from '../../api'
 
 const CreateNewTask = () => {
   return(
-    <div>Adicione uma nova tarefa</div>
+    <div></div>
   )
 }
-
+  
 export default CreateNewTask;
+

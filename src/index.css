@@ -8,3 +8,52 @@ a{
   text-decoration: none;
   color: #000;
 }
+.title{
+  margin-bottom: 5px;
+  font-size: 1.6em;
+}
+
+.information{
+  margin-bottom: 5px;
+}
+
+.priority{
+  margin-bottom: 5px;
+}
+
+.status{
+  margin-bottom: 5px;
+}
+
+.due{
+  color: #dc0073;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.success{
+  color: #157145;
+  font-size: 0.8em;
+  border-color: #157145;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.delete-success {
+  color: #e63946;
+  font-size: 0.8em;
+  border-color: #e63946;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.edit-success{
+  color: #344e41;
+  font-size: 0.8em;
+  border-color: #344e41;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
