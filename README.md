@@ -40,9 +40,9 @@ Para usar `<To do list>`, siga estas etapas:
 ```
 No terminal, digite yarn start.
 ```
-No navegador, digite http://localhost:3000
+No navegador, digite http://localhost:3000 ou https://projetolistadetarefas.herokuapp.com/
 ```
-ou digite 
+
 
 ## 🤝 Colaboradores
 
