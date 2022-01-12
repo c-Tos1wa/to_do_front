@@ -50,7 +50,7 @@ const SingleTask = () => {
   return(
     <div className="details">
       <div className="info-all">
-        <div className="info">
+        <div className="">
           <p className="title">Título: {task.title}</p>
           <p className="information">Descrição: {task.description}</p>
           <p className="priority">Prioridade: {task.priority}</p>

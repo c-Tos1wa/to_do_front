@@ -17,7 +17,6 @@ const CreateNewTask = () => {
   });
 
   const handleChange = (event) => {
-    // console.log(event.target.name)
     const fieldsFull = {
       ...data
     }
